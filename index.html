@@ -10,17 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
 :root {
-  --bg: #060a0f;
-  --bg2: #0c1420;
-  --bg3: #111d2e;
-  --card: #0e1928;
-  --border: rgba(0,212,161,0.12);
-  --accent: #00d4a1;
-  --accent2: #00b4d8;
-  --text: #e2eaf5;
-  --muted: #5a7080;
-  --dim: #2a3a4a;
-  --gold: #c9a96e;
+  --bg: #f7f8fa;
+  --bg2: #edf1f7;
+  --bg3: #e2e8f0;
+  --card: #ffffff;
+  --border: rgba(0,120,100,0.15);
+  --accent: #009975;
+  --accent2: #0098c0;
+  --text: #0f1e2d;
+  --muted: #60717f;
+  --dim: #b0bec8;
+  --gold: #8a6835;
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -56,7 +56,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 48px;
-  background: rgba(6,10,15,0.85);
+  background: rgba(247,248,250,0.92);
+  box-shadow: 0 1px 0 rgba(0,120,100,0.1);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
@@ -105,8 +106,8 @@ nav {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0,212,161,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,212,161,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0,153,117,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,153,117,0.06) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 70% at 20% 50%, black 40%, transparent 100%);
 }
@@ -116,7 +117,7 @@ nav {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,212,161,0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,153,117,0.08) 0%, transparent 70%);
   top: -100px;
   right: -100px;
   pointer-events: none;
@@ -127,7 +128,7 @@ nav {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,180,216,0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,152,192,0.07) 0%, transparent 70%);
   bottom: 0;
   left: 200px;
   pointer-events: none;
@@ -194,7 +195,7 @@ nav {
   align-items: center;
   gap: 8px;
   background: var(--accent);
-  color: #060a0f;
+  color: #ffffff;
   font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
   font-weight: 500;
@@ -206,9 +207,9 @@ nav {
 }
 
 .btn-primary:hover {
-  background: #00f0b8;
+  background: #00b88a;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0,212,161,0.3);
+  box-shadow: 0 8px 30px rgba(0,153,117,0.3);
 }
 
 .btn-outline {
@@ -322,7 +323,7 @@ section {
 
 .about-desc {
   font-size: 1rem;
-  color: rgba(226,234,245,0.7);
+  color: rgba(15,30,45,0.72);
   line-height: 1.9;
   margin-bottom: 20px;
 }
@@ -680,7 +681,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 60%, rgba(6,10,15,0.8) 100%);
+  background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.65) 100%);
   pointer-events: none;
 }
 
@@ -704,9 +705,9 @@ section {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
-  background: rgba(6,10,15,0.8);
+  background: rgba(0,0,0,0.65);
   padding: 4px 10px;
-  border: 1px solid rgba(201,169,110,0.2);
+  border: 1px solid rgba(138,104,53,0.3);
 }
 
 .crypto-strategies {
@@ -719,7 +720,7 @@ section {
 .strategy-card {
   padding: 28px 32px;
   border: 1px solid var(--border);
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.7);
   position: relative;
   overflow: hidden;
 }
@@ -895,7 +896,7 @@ footer {
         <div class="stat-label">Years Experience</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">6<span>+</span></div>
+        <div class="stat-num">8<span>+</span></div>
         <div class="stat-label">Live Projects</div>
       </div>
       <div class="stat-item">
@@ -994,7 +995,7 @@ footer {
 
     <!-- Project 1: MatchMarket -->
     <div class="project-card reveal">
-      <div class="project-num">01 / 06</div>
+      <div class="project-num">01 / 08</div>
       <div class="project-category">B2B Platform · Founder Project</div>
       <h3 class="project-title">MatchMarket</h3>
       <p class="project-desc">A B2B social networking platform for entrepreneurs and freelancers. Features swipe-based matching, company profiles, content feed, real-time chat, location-based discovery, admin dashboard, Stripe payments, and a full notification system. Deployed internationally at matchmarket.de.</p>
@@ -1014,7 +1015,7 @@ footer {
 
     <!-- Project 2: WeatherMax7 -->
     <div class="project-card reveal">
-      <div class="project-num">02 / 06</div>
+      <div class="project-num">02 / 08</div>
       <div class="project-category">Android / IoT · Client Project</div>
       <h3 class="project-title">WeatherMax7</h3>
       <p class="project-desc">Custom Android weather station app for AtmosCorex LLC, designed for tablet kiosk deployment. Integrates with the NWS API via a FastAPI backend, featuring real-time alerts, 7-day forecasts, offline caching, MQTT push notifications, and adaptive UI scaling optimized for low-bandwidth IoT environments.</p>
@@ -1033,7 +1034,7 @@ footer {
 
     <!-- Project 3: Workwear Branding -->
     <div class="project-card reveal">
-      <div class="project-num">03 / 06</div>
+      <div class="project-num">03 / 08</div>
       <div class="project-category">E-Commerce · International Client (Australia)</div>
       <h3 class="project-title">Workwear Branding</h3>
       <p class="project-desc">Full Shopify storefront for an Australian workwear brand serving clients including AFL, Mercedes-Benz, Volkswagen, and Asahi. Covers corporate, hi-vis, healthcare, hospitality, and sport categories with B2B ordering portals and custom branding capabilities.</p>
@@ -1051,7 +1052,7 @@ footer {
 
     <!-- Project 4: Dental Clinic -->
     <div class="project-card reveal">
-      <div class="project-num">04 / 06</div>
+      <div class="project-num">04 / 08</div>
       <div class="project-category">Business Website · Healthcare</div>
       <h3 class="project-title">Dr. Ilagan Dental Clinic</h3>
       <p class="project-desc">Modern, conversion-focused website for a dental clinic in Lipa City, Batangas. Features an elegant clinic tour gallery, full 14-service breakdown with patient education content, online appointment booking form, and a mobile-first responsive layout designed to convert visitors to patients.</p>
@@ -1068,7 +1069,7 @@ footer {
 
     <!-- Project 5: Car Rental -->
     <div class="project-card reveal">
-      <div class="project-num">05 / 06</div>
+      <div class="project-num">05 / 08</div>
       <div class="project-category">Business Website · Transportation</div>
       <h3 class="project-title">Triple J's Car Rental</h3>
       <p class="project-desc">Polished car rental website for a local Batangas business featuring a fleet showcase (7 vehicles), animated statistics counter, client reviews gallery, monthly booking calendar history, and an inquiry form with multi-channel contact options. Tracks 93+ happy clients.</p>
@@ -1085,7 +1086,7 @@ footer {
 
     <!-- Project 6: School -->
     <div class="project-card reveal">
-      <div class="project-num">06 / 06</div>
+      <div class="project-num">06 / 08</div>
       <div class="project-category">Institutional Website · DepEd Philippines</div>
       <h3 class="project-title">Bayorbor National High School</h3>
       <p class="project-desc">Official web platform for a DepEd high school in Mataasnakahoy, Batangas. Includes authenticated staff portal, learning resources hub (46 files across 9 subjects), announcements system, media gallery, DRRM section, organizational chart, and transparency reporting — all within a responsive Next.js architecture.</p>
@@ -1099,6 +1100,43 @@ footer {
         Visit Site
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
       </a>
+    </div>
+
+    <!-- Project 7: LA Sports World -->
+    <div class="project-card reveal">
+      <div class="project-num">07 / 08</div>
+      <div class="project-category">Business Website · Sports &amp; Recreation (Los Angeles)</div>
+      <h3 class="project-title">LA Sports World</h3>
+      <p class="project-desc">Full website for a Los Angeles-based youth sports and activities company serving families, schools, and businesses. Features a service showcase for pods, parties, camps, and school/business programs, a live class and camp registration system, age-matched coaching listings (ages 6 months–17 years), and an activity planning inquiry flow. All coaches are trained and Live Scan screened.</p>
+      <div class="project-stack">
+        <span class="stack-chip">HTML/CSS</span>
+        <span class="stack-chip">JavaScript</span>
+        <span class="stack-chip">Web Design</span>
+        <span class="stack-chip">Full Site</span>
+      </div>
+      <a href="https://lasportsworld.com/" target="_blank" class="project-link">
+        Visit Site
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+    </div>
+
+    <!-- Project 8: GreenGuard -->
+    <div class="project-card reveal">
+      <div class="project-num">08 / 08</div>
+      <div class="project-category">Android / Mobile · AgriTech</div>
+      <h3 class="project-title">GreenGuard</h3>
+      <p class="project-desc">A Flutter mobile app — Rice Pest Identification and Pesticide Recommendation System — built for rice farmers and MAO (Municipal Agriculture Office) administrators. Features AI-powered pest detection via device camera using TFLite, farm registration and monitoring, full detection history, pesticide recommendation engine, pest library, MAO assistance request system, and push notifications. Firebase backend with role-based access.</p>
+      <div class="project-stack">
+        <span class="stack-chip">Flutter</span>
+        <span class="stack-chip">Dart</span>
+        <span class="stack-chip">Firebase</span>
+        <span class="stack-chip">TFLite</span>
+        <span class="stack-chip">Provider</span>
+        <span class="stack-chip">Go Router</span>
+      </div>
+      <span class="project-link" style="cursor: default; color: var(--dim);">
+        Mobile App (APK)
+      </span>
     </div>
 
     <div style="text-align:center; margin-top: 48px;">
